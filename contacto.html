@@ -3,13 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lleve de lo bueno | Tienda Online</title>
+    <title>Contacto | Lleve de lo bueno</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
     <header>
-        </header>
+        <nav>
+            <a href="index.html">
+                <img src="img/logo.png" alt="Logo de la tienda">
+            </a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="login.html">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main>
-        </main>
+        <section class="form-section">
+            <h1 class="form-title">Contáctanos</h1>
+            <form id="formularioContacto">
+                
+                <div class="form-group">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" class="form-control" required maxlength="100">
+                    <div class="error-message" id="error-nombre"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" class="form-control" required maxlength="100">
+                    <div class="error-message" id="error-correo"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="comentario">Comentario:</label>
+                    <textarea id="comentario" name="comentario" class="form-control" required rows="5" maxlength="500"></textarea>
+                    <div class="error-message" id="error-comentario"></div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn-submit">Enviar Mensaje</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Todos los derechos reservados &copy; 2025</p>
+    </footer>
+
+</body>
+</html>
