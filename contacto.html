@@ -3,60 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto | Lleve de lo bueno</title>
+    <title>TechStore - Contacto</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
     <header>
-        <nav>
-            <a href="index.html">
-                <img src="img/logo.png" alt="Logo de la tienda">
-            </a>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="blogs.html">Blogs</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="login.html">Iniciar Sesión</a></li>
-            </ul>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="https://via.placeholder.com/120x40/2c3e50/ffffff?text=TechStore" alt="TechStore">
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="productos.html" class="nav-link">Productos</a></li>
+                    <li><a href="blogs.html" class="nav-link">Blog</a></li>
+                    <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+                    <li><a href="contacto.html" class="nav-link active">Contacto</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="login.html" class="btn-login">Iniciar Sesión</a>
+                    <a href="registro.html" class="btn-register">Registrarse</a>
+                    <div class="cart-icon">
+                        <span class="material-icons">🛒</span>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main>
-        <section class="form-section">
-            <h1 class="form-title">Contáctanos</h1>
-            <form id="formularioContacto">
-                
-                <div class="form-group">
-                    <label for="nombre">Nombre completo:</label>
-                    <input type="text" id="nombre" name="nombre" class="form-control" required maxlength="100">
-                    <div class="error-message" id="error-nombre"></div>
-                </div>
+        <section class="page-title">
+            <div class="container">
+                <h1>Contáctanos</h1>
+            </div>
+        </section>
 
-                <div class="form-group">
-                    <label for="correo">Correo electrónico:</label>
-                    <input type="email" id="correo" name="correo" class="form-control" required maxlength="100">
-                    <div class="error-message" id="error-correo"></div>
-                </div>
+        <section class="content-section">
+            <div class="container">
+                <div class="contact-form-container">
+                    <form action="#" method="post" class="contact-form">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" required>
+                        
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required>
 
-                <div class="form-group">
-                    <label for="comentario">Comentario:</label>
-                    <textarea id="comentario" name="comentario" class="form-control" required rows="5" maxlength="500"></textarea>
-                    <div class="error-message" id="error-comentario"></div>
+                        <label for="subject">Asunto:</label>
+                        <input type="text" id="subject" name="subject" required>
+                        
+                        <label for="message">Mensaje:</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                        
+                        <button type="submit" class="btn-primary">Enviar Mensaje</button>
+                    </form>
                 </div>
-
-                <div class="form-actions">
-                    <button type="submit" class="btn-submit">Enviar Mensaje</button>
-                </div>
-            </form>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>Todos los derechos reservados &copy; 2025</p>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TechStore</h3>
+                    <p>Tu tienda de tecnología de confianza desde 2024</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>📧 info@techstore.com</p>
+                    <p>📞 +56 9 1234 5678</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TechStore. Todos los derechos reservados.</p>
+            </div>
+        </div>
     </footer>
-
+    <script src="js/scripts.js"></script>
 </body>
 </html>
