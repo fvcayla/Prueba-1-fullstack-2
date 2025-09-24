@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { id: 3, title: "El Futuro de la Realidad Virtual", image: "https://via.placeholder.com/400x250/3498db/ffffff?text=Blog+Post+3", text: "La realidad virtual ya no es solo para juegos. Desde la educación hasta la medicina, su aplicación está creciendo exponencialmente. Analizamos las tendencias futuras de la RV, incluyendo la integración de la IA y el desarrollo de hardware más ligero y potente." }
     ];
 
-    // Funciones de renderizado (ya definidas en la respuesta anterior)
+    // Funciones de renderizado 
     const createProductCard = (product) => {
         return `
             <div class="product-card">
